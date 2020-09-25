@@ -1,0 +1,29 @@
+[{
+    "day": "Monday",
+    "task": "Call Mum"
+  },
+  {
+    "day": "Tuesday",
+    "task": "Call Dad"
+  },
+  {
+    "day": "Wednesday",
+    "task": "Do washing"
+  },
+  {
+    "day": "Thursday",
+    "task": "Do shopping"
+  },
+  {
+    "day": "Friday",
+    "task": "Study"
+  },
+  {
+    "day": "Saturday",
+    "task": "Clean the house"
+  },
+  {
+    "day": "Sunday",
+    "task": "Walk the dog"
+  }
+]

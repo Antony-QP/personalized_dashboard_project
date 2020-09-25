@@ -1,0 +1,7 @@
+Monday: Do washing
+Tuesday: Call mum
+Wednesday: Call Dad
+Thursday: Clean house
+Friday: See friends
+Saturday: Buy shopping
+Sunday: Sleep
