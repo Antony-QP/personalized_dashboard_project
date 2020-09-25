@@ -6,66 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fontmeme.com/fonts/alarm-clock-font">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 
 <body>
+  <div class="main">
+    <div class="row">
+      <!-- Time widget -->
+      <div class="col s4 header" id="time"></div>
 
-  <div class="row header">
-    <!-- Time widget -->
-    <div class="col s4" id="time"></div>
+      <!-- Name Widget -->
+      <div class="col s4" id="header-name">
+        <span id="name-result"></span>
+        <form id="name-form">
+          <div class="input-field">
+            <input placeholder="Enter name" id="name" type="text" class="validate">
+            <input placeholder="Enter city" id="weather-location" type="text" class="validate">
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action" id="submit-name">Submit</button>
+        </form>
+      </div>
 
-    <!-- Name Widget -->
-    <div class="col s4" id="header-name">
-      <span id="name-result"></span>
-      <form id="name-form">
-        <div class="input-field">
-          <input placeholder="Enter name" id="name" type="text" class="validate">
-          <input placeholder="Enter city" id="weather-location" type="text" class="validate">
+      <!-- Weather Widget -->
+      <div class="col s4 header" id="weather">
+        <div class="weather-container">
+          <div id="location"></div>
+          <div id="temp"></div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action" id="submit-name">Submit</button>
-      </form>
+
+      </div>
     </div>
 
-    <!-- Weather Widget -->
-    <div class="col s4" id="weather">
-      <div id="type"></div>
-      <div id="temp"></div>
-      <div id="location"></div>
+
+    <!-- Joke Widget -->
+    <div class="row lower-row">
+      <div class="col s4 center">
+        <form>
+          <h3>Feeling sad....how about a joke?</h3>
+          <button class="btn waves-effect waves-light" type="submit" id="generate-joke">Get Joke</button>
+        </form>
+        <span class="joke-output"></span>
+      </div>
+
+
+
+      <!-- News Widget -->
+      <div class="col s4 center">
+        <h3>Stock Market News</h3>
+        <ul id="news-list">
+
+        </ul>
+      </div>
+
+      <!-- To do list -->
+
+      <div class="col s4 center">
+        <h3>To do list...</h3>
+        <div id="to-do-list">
+          <ul id="list">
+          </ul>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" id="get-to-do-list">See to-do list</button>
+      </div>
     </div>
-  </div>
 
-  <!-- Joke Widget -->
-  <div class="row">
-    <div class="col s4">
-      <form>
-        <h2>Feeling sad....how about a joke?</h2>
-        <button class="btn waves-effect waves-light" type="submit" id="generate-joke">Get Joke</button>
-      </form>
-      <span class="joke-output"></span>
-    </div>
-  </div>
-  </div>
-
-  <!-- News Widget -->
-  <div class="col s4">
-    <ul id="news-list">
-
+    <!-- UK Headlines -->
+    <!-- <div class="row">
+    <h2>Headlines</h2>
+    <ul id="headline-list">
     </ul>
+    <button class="btn waves-effect waves-light" type="submit" id="get-headlines">UK Headlines</button>
+  </div> -->
+
+
   </div>
-
-  <!-- To do list -->
-
-  <div class="col s4">
-    <div id="to-do-list">
-      <ul id="list">
-      </ul>
-    </div>
-    <button class="btn waves-effect waves-light" type="submit" id="get-to-do-list">See to-do list</button>
-  </div>
-
-
-
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -76,6 +92,7 @@
   <script src="crypto_price_widget.js"></script>
   <script src="to_do_widget.js"></script>
   <script src="app.js"></script>
+  <!-- <script src="headline_widget.js"></script> -->
 </body>
 
 </html>

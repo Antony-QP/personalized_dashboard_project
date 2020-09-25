@@ -6,7 +6,7 @@ const form = document.getElementById('name-form')
 
 
 function getNameAndCity() {
-  nameOutput.innerHTML = `Hello ${name.value}`;
+  nameOutput.innerHTML = `Hey, ${name.value}`;
 
   clearForm();
 }

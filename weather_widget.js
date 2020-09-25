@@ -25,8 +25,8 @@ class WeatherUI {
   }
 
   paint(weather) {
-    this.location.innerText = weather.name;
-    this.temp.innerText = JSON.stringify(weather.main.temp);
-    this.type.innerText = weather.weather[0].description.toUpperCase()
+    this.location.innerText = weather.name + '..';
+    this.temp.innerText = JSON.stringify(weather.main.temp) + ' \u00b0C';
+    this.type.innerText = weather.weather[0].description;
   }
 }

@@ -1,0 +1,58 @@
+:root {
+  --primary-text-color: white;
+}
+
+body {
+  overflow: hidden;
+}
+
+.main {
+  background: url('https://source.unsplash.com/collection/190727') no-repeat center center fixed;
+  background-size: cover;
+  height: 1000px;
+}
+
+h3 {
+  color: var(--primary-text-color)
+}
+
+.header {
+  color: var(--primary-text-color);
+  font-size: 25px;
+}
+
+.weather-container {
+  display: flex;
+  float: right;
+
+}
+
+#header-name {
+  text-align: center;
+  color: var(--primary-text-color)
+}
+
+#name-result {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.lower-row {
+  margin-top: 250px;
+}
+
+#news-list {
+  color: var(--primary-text-color)
+}
+
+.joke-output {
+  color: var(--primary-text-color)
+}
+
+#list {
+  color: var(--primary-text-color)
+}
+
+.hidden {
+  display: none;
+}

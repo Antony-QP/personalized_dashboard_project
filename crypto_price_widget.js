@@ -7,15 +7,16 @@ function getCrypto() {
   xhr.onload = function () {
     if (this.status === 200) {
       const response = JSON.parse(this.responseText)
+      let newsList = ''
       let i;
-      for (i = 0; i < 5; i++) {
+      for (i = 0; i < 1; i++) {
         console.log(response[i])
-        let list = document.getElementById('news-list')
-        list += `<li>${response[i].headline}<li>`
+        newsList += `<li>${response[i].headline}: ${response[i].summary}<li>`
       }
+      document.getElementById('news-list').innerHTML = newsList
     }
   }
   xhr.send()
 }
 
-// getCrypto()
+getCrypto()
