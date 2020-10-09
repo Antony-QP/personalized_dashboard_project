@@ -3,6 +3,16 @@
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+body {
   overflow: hidden;
 }
 
@@ -23,14 +33,18 @@ h3 {
 
 .weather-container {
   display: flex;
-  float: right;
-
+  justify-content: center;
+  align-items: center;
 }
 
 #header-name {
   text-align: center;
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
+  display: block;
+  margin: auto;
+  width: 500px;
 }
+
 
 #name-result {
   font-size: 40px;
@@ -55,4 +69,14 @@ h3 {
 
 .hidden {
   display: none;
+}
+
+.row .lower-row {
+  display: block;
+  margin-bottom: 0;
+  height: 10px;
+}
+
+.news_widget {
+  margin-bottom: 0;
 }
