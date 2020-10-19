@@ -13,11 +13,11 @@
 
 <body>
   <div class="main">
-    <div class="row">
+    <div class="row header-container">
       <!-- Time widget -->
       <div class="col s4 header" id="time"></div>
-
       <!-- Name Widget -->
+      <div class="name-container">
       <div id="header-name">
         <span id="name-result"></span>
         <span class="txt-type" data-words='["Good morning....", "Please enter your name and city"]' data-wait="3000"></span>
@@ -31,6 +31,7 @@
         </form>
       </div>
       </div>
+    </div>
 
       <!-- Weather Widget -->
       <div class="col s4 header" id="weather">
@@ -42,27 +43,26 @@
       </div>
     </div>
 
-
     <!-- Joke Widget -->
     
     <div class="row lower-row">
-      <div class="col s6 center">
-        <form>
-          <h3></h3>
+      <div class="col s12 center footeresque-container">
+        <div class="joke-container">
           <button class="btn waves-effect waves-light" type="submit" id="generate-joke">Get Joke</button>
-        </form>
         <span class="joke-output"></span>
+      </div>
+        <div class="news_widget row lower-row">
+          <button class="btn waves-effect waves-light" type="submit" id="generate-joke">Stock Market News</button>
+          <ul id="news-list">
+  
+          </ul>
+        </div>
       </div>
 
 
 
       <!-- News Widget -->
-      <div class="news_widget row lower-row">
-        <button class="btn waves-effect waves-light" type="submit" id="generate-joke">Stock Market News</button>
-        <ul id="news-list">
 
-        </ul>
-      </div>
   
     
 

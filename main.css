@@ -17,18 +17,24 @@ body {
 }
 
 .main {
-  background: url('https://source.unsplash.com/collection/190727') no-repeat center center fixed;
+  background: url("https://source.unsplash.com/collection/190727") no-repeat
+    center center fixed;
   background-size: cover;
   height: 1000px;
 }
 
 h3 {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 .header {
   color: var(--primary-text-color);
   font-size: 25px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: space-between;
 }
 
 .weather-container {
@@ -40,11 +46,12 @@ h3 {
 #header-name {
   text-align: center;
   color: var(--primary-text-color);
-  display: block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 500px;
 }
-
 
 #name-result {
   font-size: 40px;
@@ -52,19 +59,24 @@ h3 {
 }
 
 .lower-row {
+  width: 100%;
   margin-top: 250px;
+  position: absolute;
+  display: flex;
+  flex-direction: space-between;
+  bottom: 50px;
 }
 
 #news-list {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 .joke-output {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 #list {
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 .hidden {
@@ -78,5 +90,13 @@ h3 {
 }
 
 .news_widget {
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+
+.joke-container {
+  margin-top: 50px;
+}
+
+.footeresque-container {
+  height: 175px;
 }
